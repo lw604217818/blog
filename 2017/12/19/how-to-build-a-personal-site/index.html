@@ -1,192 +1,370 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
+<html lang="en">
 
-  
-  <title>how to build a personal site | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="为了纪念一下这个自己开始写博客了，决定先写一篇博客来记录一下这个博客是如何从0开始的。第一步">
-<meta name="keywords" content="build a personal site">
-<meta property="og:type" content="article">
-<meta property="og:title" content="how to build a personal site">
-<meta property="og:url" content="http://rivan.cc/2017/12/19/how-to-build-a-personal-site/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="为了纪念一下这个自己开始写博客了，决定先写一篇博客来记录一下这个博客是如何从0开始的。第一步">
-<meta property="og:updated_time" content="2017-12-20T08:12:54.000Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="how to build a personal site">
-<meta name="twitter:description" content="为了纪念一下这个自己开始写博客了，决定先写一篇博客来记录一下这个博客是如何从0开始的。第一步">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="雷雯的个人博客">
+    <meta name="keyword" content="">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-person-128.png">
+    <link rel="alternate" type="application/atom+xml" title="Riven" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        how to build a personal site｜Riven
+        
+    </title>
+
+    <link rel="canonical" href="http://rivan.cc/2017/12/19/how-to-build-a-personal-site/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+<style>
+
+    header.intro-header {
+        background-image: url('')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    Riven
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+					
+					
+                </ul>
+            </div>
+        </div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://rivan.cc"></form>
-      </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img"
+     src="">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>how to build a personal site</h1>
+                    
+                    <span class="meta">
+                         作者 雷雯
+                        <span>
+                          日期 2017-12-19
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#build a personal site"
+                           title="build a personal site">build a personal site</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+    <div class="post-title-haojen">
+        <span>
+            how to build a personal site
+        </span>
+    </div>
 </header>
-      <div class="outer">
-        <section id="main"><article id="post-how-to-build-a-personal-site" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/12/19/how-to-build-a-personal-site/" class="article-date">
-  <time datetime="2017-12-19T08:15:35.000Z" itemprop="datePublished">2017-12-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      how to build a personal site
-    </h1>
-  
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>为了纪念一下这个自己开始写博客了，决定先写一篇博客来记录一下这个博客是如何从0开始的。<br><br>第一步</p>
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <p>为了纪念一下这个自己开始写博客了，决定先写一篇博客来记录一下这个博客是如何从0开始的。<br></p>
+<h1 id="STEP1-准备服务器和域名"><a href="#STEP1-准备服务器和域名" class="headerlink" title="STEP1:准备服务器和域名"></a>STEP1:准备服务器和域名</h1><ul>
+<li>关于域名：不多说，自己上万网上去买就好了，需要实名认证的记得买好3-5天内进行实名认证。</li>
+<li>关于服务器：自己选，国内有阿里云、腾讯云，国外有<a href="https://www.vultr.com/?ref=7288455" target="_blank" rel="noopener">vultr</a>。我选用了<a href="https://www.vultr.com/?ref=7288455" target="_blank" rel="noopener">vultr</a>。其中一个原因是最近它支持了支付宝。<blockquote>
+<p>具体步骤如下：</p>
+<ol>
+<li>注册<a href="https://www.vultr.com/?ref=7288455" target="_blank" rel="noopener">vultr</a></li>
+<li>点击Billing进行充值，建议选用Alipay(支付宝)，扫码支付很方便。<br> <img src="billing.png" alt="示意图"></li>
+<li>服务器创建：点击右上角的如图所示按钮 <img src="deploy-new-server.png" alt="服务器创建按钮"> Deploy New Server–&gt;选择Server Location、Server Type、Server Size–&gt;Deploy Now<br><img src="Location.png" alt="Server Location"><br><img src="Type.png" alt="Type and Size"><br><img src="other.png" alt="other"></li>
+<li>进入左侧 Servers ，稍等1分钟服务器信息就生成了。<br>用户点击服务器状态右边的“…”，从下拉菜单中可以看到这些命令：<br> “Server Details” 服务器详细信息；<br> “View Console” 控制台；<br> “Server Stop” 关机；<br> “Server Restart” 重启；<br> “Server Reinstall” 重装系统；<br> “Server Destroy” 销毁服务器。</li>
+</ol>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p>tips:</p>
+<ol>
+<li>关于站点：我一开始选了日本，然后View Console一直没有反应，后来咨询客服，客服说日本站点有问题，我又换成新加坡，之后就好了</li>
+<li>vultr SSH默认端口号是22  </li>
+<li>单击服务器名或Cloud Instance 也可以进入VPS控制面板管理<ul>
+<li>IP Address 服务器IP</li>
+<li>Username ssh用户名</li>
+<li>Password ssh密码</li>
+</ul>
+</li>
+</ol>
+</blockquote>
+<h1 id="STEP2-搭建个人博客"><a href="#STEP2-搭建个人博客" class="headerlink" title="STEP2:搭建个人博客"></a>STEP2:搭建个人博客</h1><p>我选用了<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo</a>来做博客，它有丰富主题，而且有插件支持博客自动化部署到服务器，相当方便。具体步骤就按照官网文档走就行，有中文文档，我就不啰嗦了。切换主题见我博客<a href="">hexo如何切换主题</a></p>
+<h1 id="STEP3-博客发到服务器"><a href="#STEP3-博客发到服务器" class="headerlink" title="STEP3:博客发到服务器"></a>STEP3:博客发到服务器</h1><p>这部分其实<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo</a>的部署部分有详细介绍，在这里我就只补充说明两点：</p>
+<ol>
+<li>如果选择git发到GitHub，记得在GitHub的Setting里面设置SSH或者在项目的Settings里面设置Deploy keys，二选一即可，不可同时设置。两者的区别见我的另一篇博客<a href="">ssh 和 deploy key 区别</a></li>
+<li>如果选择rsync发到VPS，不要去改deploy里面的port，这个port要保持和VPS的22一致！不然会发不上去。</li>
+</ol>
+<h1 id="STEP4-域名解析和Nginx代理"><a href="#STEP4-域名解析和Nginx代理" class="headerlink" title="STEP4:域名解析和Nginx代理"></a>STEP4:域名解析和Nginx代理</h1><ul>
+<li><p>关于域名解析：</p>
+<p>  <img src="域名解析.png" alt="域名解析"><br><br>  如上图所示：记录类型选A，记录值填入VPS的IP Address，主机记录是域名前缀，我设置的是blog</p>
+</li>
+<li><p>Nginx代理</p>
+<ol>
+<li>首先安装Nginx</li>
+<li><p>修改Nginx配置(server_name、root、index），如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /etc/nginx/</span><br><span class="line">vi nginx.conf</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen       80 default_server;</span><br><span class="line">    listen       [::]:80 default_server;</span><br><span class="line">    server_name  这里填上域名如，blog.rivan.cc;</span><br><span class="line">    root         这里填上你在hexo的_config.yml的deploy的root所填写的路径;</span><br><span class="line"></span><br><span class="line">    index	     index.html</span><br><span class="line"></span><br><span class="line">    # Load configuration files for the default server block.</span><br><span class="line">    include /etc/nginx/default.d/*.conf;</span><br><span class="line"></span><br><span class="line">    location / &#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    error_page 404 /404.html;</span><br><span class="line">        location = /40x.html &#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    error_page 500 502 503 504 /50x.html;</span><br><span class="line">        location = /50x.html &#123;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>3、重启Nginx,如果没有启动过，则直接启动Nginx就好</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nginx -s reload #重启</span><br><span class="line">nginx #启动</span><br></pre></td></tr></table></figure>
+<p>4、防火墙设置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 开启80端口</span><br><span class="line">firewall-cmd --add-port=80/tcp</span><br></pre></td></tr></table></figure>
+<p>查询的命令是</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 查询是否开启80端口—Nginx的端口</span><br><span class="line">firewall-cmd --query-port=80/tcp</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ul>
 
-      
+                <hr>
+                
+
+                <ul class="pager">
+                    
+                    
+                </ul>
+
+                
+
+                
+
+
+                <!--加入新的评论系统-->
+                
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#STEP1-准备服务器和域名"><span class="toc-text"><a href="#STEP1-&#x51C6;&#x5907;&#x670D;&#x52A1;&#x5668;&#x548C;&#x57DF;&#x540D;" class="headerlink" title="STEP1:&#x51C6;&#x5907;&#x670D;&#x52A1;&#x5668;&#x548C;&#x57DF;&#x540D;"></a>STEP1:&#x51C6;&#x5907;&#x670D;&#x52A1;&#x5668;&#x548C;&#x57DF;&#x540D;</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#STEP2-搭建个人博客"><span class="toc-text"><a href="#STEP2-&#x642D;&#x5EFA;&#x4E2A;&#x4EBA;&#x535A;&#x5BA2;" class="headerlink" title="STEP2:&#x642D;&#x5EFA;&#x4E2A;&#x4EBA;&#x535A;&#x5BA2;"></a>STEP2:&#x642D;&#x5EFA;&#x4E2A;&#x4EBA;&#x535A;&#x5BA2;</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#STEP3-博客发到服务器"><span class="toc-text"><a href="#STEP3-&#x535A;&#x5BA2;&#x53D1;&#x5230;&#x670D;&#x52A1;&#x5668;" class="headerlink" title="STEP3:&#x535A;&#x5BA2;&#x53D1;&#x5230;&#x670D;&#x52A1;&#x5668;"></a>STEP3:&#x535A;&#x5BA2;&#x53D1;&#x5230;&#x670D;&#x52A1;&#x5668;</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#STEP4-域名解析和Nginx代理"><span class="toc-text"><a href="#STEP4-&#x57DF;&#x540D;&#x89E3;&#x6790;&#x548C;Nginx&#x4EE3;&#x7406;" class="headerlink" title="STEP4:&#x57DF;&#x540D;&#x89E3;&#x6790;&#x548C;Nginx&#x4EE3;&#x7406;"></a>STEP4:&#x57DF;&#x540D;&#x89E3;&#x6790;&#x548C;Nginx&#x4EE3;&#x7406;</span></a></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+
     </div>
-    <footer class="article-footer">
-      <a data-url="http://rivan.cc/2017/12/19/how-to-build-a-personal-site/" data-id="cjbdexs2d0000v5h7bxiziksd" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/build-a-personal-site/">build a personal site</a></li></ul>
-
-    </footer>
-  </div>
-  
-    
-  
 </article>
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/build-a-personal-site/">build a personal site</a></li></ul>
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Riven 2017
+                </p>
+
+            </div>
+        </div>
     </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/build-a-personal-site/" style="font-size: 10px;">build a personal site</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2017/12/19/how-to-build-a-personal-site/">how to build a personal site</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2017 Riven<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
 </footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://rivan.cc/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+<!-- Google Analytics -->
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<!-- Baidu Tongji -->
 
 
-<script src="/js/script.js"></script>
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
 
+  _st('install','','2.0.0');
+</script>
 
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-  </div>
+<!--wechat title img-->
+<img class="wechat-title-img" src="">
 </body>
+
 </html>
