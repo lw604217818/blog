@@ -120,13 +120,13 @@
 
 
 <img class="wechat-title-img"
-     src="">
+     src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513836706770&di=b6f12303a4e27ba2664b05bdb7721f7e&imgtype=0&src=http%3A%2F%2Ft1.niutuku.com%2F960%2F28%2F28-320663.jpg">
 
 
 <style>
     
     header.intro-header {
-        background-image: url('')
+        background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513836706770&di=b6f12303a4e27ba2664b05bdb7721f7e&imgtype=0&src=http%3A%2F%2Ft1.niutuku.com%2F960%2F28%2F28-320663.jpg')
     }
 
     
@@ -169,7 +169,7 @@
             <!-- Post Container -->
             <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
                 <p>为了纪念一下这个自己开始写博客了，决定先写一篇博客来记录一下这个博客是如何从0开始的。<br></p>
-<h1 id="STEP1-准备服务器和域名"><a href="#STEP1-准备服务器和域名" class="headerlink" title="STEP1:准备服务器和域名"></a>STEP1:准备服务器和域名</h1><ul>
+<h2 id="STEP1-准备服务器和域名"><a href="#STEP1-准备服务器和域名" class="headerlink" title="STEP1:准备服务器和域名"></a>STEP1:准备服务器和域名</h2><ul>
 <li>关于域名：不多说，自己上万网上去买就好了，需要实名认证的记得买好3-5天内进行实名认证。</li>
 <li>关于服务器：自己选，国内有阿里云、腾讯云，国外有<a href="https://www.vultr.com/?ref=7288455" target="_blank" rel="noopener">vultr</a>。我选用了<a href="https://www.vultr.com/?ref=7288455" target="_blank" rel="noopener">vultr</a>。其中一个原因是最近它支持了支付宝。<blockquote>
 <p>具体步骤如下：</p>
@@ -195,13 +195,13 @@
 </li>
 </ol>
 </blockquote>
-<h1 id="STEP2-搭建个人博客"><a href="#STEP2-搭建个人博客" class="headerlink" title="STEP2:搭建个人博客"></a>STEP2:搭建个人博客</h1><p>我选用了<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo</a>来做博客，它有丰富主题，而且有插件支持博客自动化部署到服务器，相当方便。具体步骤就按照官网文档走就行，有中文文档，我就不啰嗦了。切换主题见我博客<a href="">hexo如何切换主题</a></p>
-<h1 id="STEP3-博客发到服务器"><a href="#STEP3-博客发到服务器" class="headerlink" title="STEP3:博客发到服务器"></a>STEP3:博客发到服务器</h1><p>这部分其实<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo</a>的部署部分有详细介绍，在这里我就只补充说明两点：</p>
+<h2 id="STEP2-搭建个人博客"><a href="#STEP2-搭建个人博客" class="headerlink" title="STEP2:搭建个人博客"></a>STEP2:搭建个人博客</h2><p>我选用了<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo</a>来做博客，它有丰富主题，而且有插件支持博客自动化部署到服务器，相当方便。具体步骤就按照官网文档走就行，有中文文档，我就不啰嗦了。切换主题见我博客<a href="">hexo如何切换主题</a></p>
+<h2 id="STEP3-博客发到服务器"><a href="#STEP3-博客发到服务器" class="headerlink" title="STEP3:博客发到服务器"></a>STEP3:博客发到服务器</h2><p>这部分其实<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo</a>的部署部分有详细介绍，在这里我就只补充说明两点：</p>
 <ol>
 <li>如果选择git发到GitHub，记得在GitHub的Setting里面设置SSH或者在项目的Settings里面设置Deploy keys，二选一即可，不可同时设置。两者的区别见我的另一篇博客<a href="">ssh 和 deploy key 区别</a></li>
 <li>如果选择rsync发到VPS，不要去改deploy里面的port，这个port要保持和VPS的22一致！不然会发不上去。</li>
 </ol>
-<h1 id="STEP4-域名解析和Nginx代理"><a href="#STEP4-域名解析和Nginx代理" class="headerlink" title="STEP4:域名解析和Nginx代理"></a>STEP4:域名解析和Nginx代理</h1><ul>
+<h2 id="STEP4-域名解析和Nginx代理"><a href="#STEP4-域名解析和Nginx代理" class="headerlink" title="STEP4:域名解析和Nginx代理"></a>STEP4:域名解析和Nginx代理</h2><ul>
 <li><p>关于域名解析：</p>
 <p>  <img src="域名解析.png" alt="域名解析"><br><br>  如上图所示：记录类型选A，记录值填入VPS的IP Address，主机记录是域名前缀，我设置的是blog</p>
 </li>
@@ -237,11 +237,30 @@
 
                 <!--加入新的评论系统-->
                 
+                <!-- 来必力City版安装代码 -->
+                <div id="lv-container" data-id="city" data-uid="riven">
+                    <script type="text/javascript">
+                        (function(d, s) {
+                            var j, e = d.getElementsByTagName(s)[0];
+
+                            if (typeof LivereTower === 'function') { return; }
+
+                            j = d.createElement(s);
+                            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                            j.async = true;
+
+                            e.parentNode.insertBefore(j, e);
+                        })(document, 'script');
+                    </script>
+                    <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+                </div>
+                <!-- City版安装代码已完成 -->
+                
             </div>
 
             <div class="hidden-xs col-sm-3 toc-col">
                 <div class="toc-wrap">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#STEP1-准备服务器和域名"><span class="toc-text"><a href="#STEP1-&#x51C6;&#x5907;&#x670D;&#x52A1;&#x5668;&#x548C;&#x57DF;&#x540D;" class="headerlink" title="STEP1:&#x51C6;&#x5907;&#x670D;&#x52A1;&#x5668;&#x548C;&#x57DF;&#x540D;"></a>STEP1:&#x51C6;&#x5907;&#x670D;&#x52A1;&#x5668;&#x548C;&#x57DF;&#x540D;</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#STEP2-搭建个人博客"><span class="toc-text"><a href="#STEP2-&#x642D;&#x5EFA;&#x4E2A;&#x4EBA;&#x535A;&#x5BA2;" class="headerlink" title="STEP2:&#x642D;&#x5EFA;&#x4E2A;&#x4EBA;&#x535A;&#x5BA2;"></a>STEP2:&#x642D;&#x5EFA;&#x4E2A;&#x4EBA;&#x535A;&#x5BA2;</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#STEP3-博客发到服务器"><span class="toc-text"><a href="#STEP3-&#x535A;&#x5BA2;&#x53D1;&#x5230;&#x670D;&#x52A1;&#x5668;" class="headerlink" title="STEP3:&#x535A;&#x5BA2;&#x53D1;&#x5230;&#x670D;&#x52A1;&#x5668;"></a>STEP3:&#x535A;&#x5BA2;&#x53D1;&#x5230;&#x670D;&#x52A1;&#x5668;</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#STEP4-域名解析和Nginx代理"><span class="toc-text"><a href="#STEP4-&#x57DF;&#x540D;&#x89E3;&#x6790;&#x548C;Nginx&#x4EE3;&#x7406;" class="headerlink" title="STEP4:&#x57DF;&#x540D;&#x89E3;&#x6790;&#x548C;Nginx&#x4EE3;&#x7406;"></a>STEP4:&#x57DF;&#x540D;&#x89E3;&#x6790;&#x548C;Nginx&#x4EE3;&#x7406;</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#STEP1-准备服务器和域名"><span class="toc-text"><a href="#STEP1-&#x51C6;&#x5907;&#x670D;&#x52A1;&#x5668;&#x548C;&#x57DF;&#x540D;" class="headerlink" title="STEP1:&#x51C6;&#x5907;&#x670D;&#x52A1;&#x5668;&#x548C;&#x57DF;&#x540D;"></a>STEP1:&#x51C6;&#x5907;&#x670D;&#x52A1;&#x5668;&#x548C;&#x57DF;&#x540D;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#STEP2-搭建个人博客"><span class="toc-text"><a href="#STEP2-&#x642D;&#x5EFA;&#x4E2A;&#x4EBA;&#x535A;&#x5BA2;" class="headerlink" title="STEP2:&#x642D;&#x5EFA;&#x4E2A;&#x4EBA;&#x535A;&#x5BA2;"></a>STEP2:&#x642D;&#x5EFA;&#x4E2A;&#x4EBA;&#x535A;&#x5BA2;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#STEP3-博客发到服务器"><span class="toc-text"><a href="#STEP3-&#x535A;&#x5BA2;&#x53D1;&#x5230;&#x670D;&#x52A1;&#x5668;" class="headerlink" title="STEP3:&#x535A;&#x5BA2;&#x53D1;&#x5230;&#x670D;&#x52A1;&#x5668;"></a>STEP3:&#x535A;&#x5BA2;&#x53D1;&#x5230;&#x670D;&#x52A1;&#x5668;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#STEP4-域名解析和Nginx代理"><span class="toc-text"><a href="#STEP4-&#x57DF;&#x540D;&#x89E3;&#x6790;&#x548C;Nginx&#x4EE3;&#x7406;" class="headerlink" title="STEP4:&#x57DF;&#x540D;&#x89E3;&#x6790;&#x548C;Nginx&#x4EE3;&#x7406;"></a>STEP4:&#x57DF;&#x540D;&#x89E3;&#x6790;&#x548C;Nginx&#x4EE3;&#x7406;</span></a></li></ol>
                 </div>
             </div>
         </div>
@@ -284,9 +303,27 @@
                 
 
                 
+                    <li>
+                        <a target="_blank" href="http://weibo.com/lw604217818">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
 
                 
 
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/lw604217818">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
                 
 
                 
